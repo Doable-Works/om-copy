@@ -45,7 +45,7 @@ export default function Header() {
 		// Trigger rotation animation
 		setRotatingIcon(dropdownKey);
 		setTimeout(() => setRotatingIcon(null), 600); // Remove after animation duration
-		
+
 		setOpenDropdown((prevOpenDropdown) =>
 			prevOpenDropdown === dropdownKey ? null : dropdownKey
 		);
@@ -112,7 +112,14 @@ export default function Header() {
 										openDropdown === "workWithOm" ? styles.work_with_om_open : ""
 									}`}
 								>
-									WORK WITH OM <span className={`${styles.mobile_plus} ${rotatingIcon === "workWithOm" ? styles.rotating : ""}`}>+</span>
+									WORK WITH OM{" "}
+									<span
+										className={`${styles.mobile_plus} ${
+											rotatingIcon === "workWithOm" ? styles.rotating : ""
+										}`}
+									>
+										+
+									</span>
 								</span>
 								{/* <div className={`${styles.right_img}`}>
 								<img src={rightImg.src} className="img-responsive" alt="leftImg" style={{maxWidth:"80px", objectFit:"contain"}} />
@@ -191,7 +198,14 @@ export default function Header() {
 										openDropdown === "learnWithOm" ? styles.work_with_om_open : ""
 									}`}
 								>
-									LEARN WITH OM <span className={`${styles.mobile_plus} ${rotatingIcon === "learnWithOm" ? styles.rotating : ""}`}>+</span>
+									LEARN WITH OM{" "}
+									<span
+										className={`${styles.mobile_plus} ${
+											rotatingIcon === "learnWithOm" ? styles.rotating : ""
+										}`}
+									>
+										+
+									</span>
 								</span>
 								{openDropdown === "learnWithOm" && (
 									<ul className={`text_16_r ${styles.dropdown_custom_list}`}>
@@ -225,14 +239,19 @@ export default function Header() {
 									</ul>
 								)}
 							</li>
-						 <li>
-							<a href="https://www.gd-partners.in" target="_blank" className="text_15_r">
-								GD PARTNERS
-							</a>
-						</li> 
+							<li>
+								<a
+									href="https://www.gd-partners.in"
+									target="_blank"
+									className="text_15_r"
+									rel="noopener noreferrer"
+								>
+									GD PARTNERS
+								</a>
+							</li>
 							<li>
 								<a href="connect" className="text_15_r">
-									CONNECT
+									CONTACT US
 								</a>
 							</li>
 						</ul>

@@ -72,7 +72,7 @@ export default function Footer() {
 								<a href="https://www.gd-partners.in" target="_blank">GD PARTNERS</a>
 							</h4>
 							<h4 className="text_16_b pb_10">
-								<a href="connect">CONNECT</a>
+								<a href="connect">CONTACT US</a>
 							</h4>
 						</div>
 						<div className={`${styles.link_box}`}>

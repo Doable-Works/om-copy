@@ -53,6 +53,8 @@ export default function HomePage() {
 						muted
 						autoPlay
 						loop
+						playsInline
+						preload="auto"
 					/>
 					{/* Mobile video */}
 					<video
@@ -61,6 +63,9 @@ export default function HomePage() {
 						muted
 						autoPlay
 						loop
+						playsInline
+						// webkit-playsinline="true"
+						preload="auto"
 					/>
 					<div className={styles.banner_overlay}></div>
 					<img
